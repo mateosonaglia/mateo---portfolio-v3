@@ -1,6 +1,20 @@
 const experience = [
   {
-    dates: "2025–2026",
+    dates: "September 2026–Present",
+    org: "The Cheesecake Factory Bakery",
+    role: "Sales Support Technician",
+    summary: "Continuing with the company after my international sales and marketing internship, supporting the day-to-day work behind customer relationships and sales execution.",
+    points: ["Support sales operations using Creatio CRM and Ross", "Assist with sales order entry and customer documentation", "Coordinate sales support tasks and internal follow-through"],
+  },
+  {
+    dates: "November 2026–Present",
+    org: "Apple",
+    role: "Sales Specialist",
+    summary: "Developing customer-facing sales experience through personalized conversations and product guidance in Apple Retail.",
+    points: ["Engage customers to understand their needs and help them explore relevant solutions", "Collaborate with store colleagues to deliver a welcoming customer experience"],
+  },
+  {
+    dates: "Summer 2025",
     org: "The Cheesecake Factory Bakery",
     role: "International Sales, Marketing & Business Development Intern",
     summary: "Supported international sales and marketing initiatives through market research, customer materials, and collaboration across teams.",
@@ -14,7 +28,7 @@ const experience = [
     points: ["Developed the marketing strategy and content plan for City Impact’s Beachfront Run, an event that reached more than 1,250 registrations", "Build relationships with community partners and coordinate content and project delivery"],
   },
   {
-    dates: "December 2025 to Present",
+    dates: "January 2026–Present",
     org: "American Marketing Association, California Lutheran University",
     role: "President",
     summary: "Lead an executive team and build experiences that connect students with industry professionals and new career possibilities.",
@@ -62,7 +76,7 @@ export default function ResumePage() {
       <div className="resume-section-heading">
         <p className="eyebrow">Selected experience</p>
         <h2>Work Experience</h2>
-        <p>A curated view of my most relevant international, leadership, and community-focused work.</p>
+        <p>My progression across sales, marketing, entrepreneurship, and team leadership.</p>
       </div>
       <div className="experience-cards">
         {experience.map((item, index) => <article className={index === 0 ? "experience-card experience-current" : "experience-card"} key={`${item.org}-${item.dates}`}>
@@ -127,7 +141,7 @@ export default function ResumePage() {
             <h3>European Innovation Academy</h3>
           </div>
           <time>London · July 2026</time>
-          <p>Participating in an intensive international innovation program, collaborating across cultures while applying entrepreneurship, customer discovery, and venture development.</p>
+          <p>Participated in an intensive international innovation program, collaborating across cultures while applying entrepreneurship, customer discovery, and venture development.</p>
         </article>
         <article className="academic-experience-card study-abroad-card">
           <div>

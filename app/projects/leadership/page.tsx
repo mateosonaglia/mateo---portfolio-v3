@@ -37,7 +37,7 @@ export default function LeadershipPage() {
         </div>
         <div className="progression-grid">
           <article>
-            <span>December 2025 to Present</span>
+            <span>January 2026–Present</span>
             <h3>President</h3>
             <ul>
               <li>Lead a student executive team in planning and executing campus-wide AMA initiatives</li>
@@ -47,7 +47,7 @@ export default function LeadershipPage() {
             </ul>
           </article>
           <article>
-            <span>May 2025 to November 2025</span>
+            <span>May–December 2025</span>
             <h3>Vice President</h3>
             <ul>
               <li>Supported events, guest speakers, and campus programming</li>

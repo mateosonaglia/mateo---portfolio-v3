@@ -2,39 +2,47 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  return <>
+  return <div className="career-home">
     <section className="hero shell">
       <div className="hero-copy">
-        <h1>Connecting markets, people, and <em>growth.</em></h1>
-        <p className="hero-kicker">Global perspective. Human connection. Meaningful growth.</p>
-        <p className="hero-lede">I&apos;m Mateo Sonaglia. I grew up in Bolivia and moved to the United States at 18, learning to turn unfamiliar places into opportunities for connection. Today, I bring that same curiosity to partnerships, sales, marketing, and business development—connecting people and ideas to move meaningful work forward.</p>
-        <div className="button-row">
-          <Link className="button button-primary" href="/projects">View Projects <span>→</span></Link>
-          <Link className="button button-secondary" href="/resume">Resume <span>↗</span></Link>
-          <Link className="button button-quiet" href="/contact">Contact</Link>
-        </div>
+        <p className="eyebrow">Mateo Sonaglia · Marketing, partnerships &amp; leadership</p>
+        <h1>Turning initiative<br />into <em>impact.</em></h1>
+        <p className="hero-kicker">Building a career by building things that matter.</p>
+        <p className="hero-lede">I bring people together and move ideas forward. From leading a marketing association to building a business and gaining experience with global brands, I&apos;m learning by taking ownership, creating opportunities, and following through.</p>
+        <div className="button-row"><Link className="button button-primary" href="/projects">Explore my work</Link><a className="button button-secondary" href="#my-story">Get to know me</a></div>
+        <p className="hero-context">Based in Los Angeles · Cal Lutheran, Class of 2026</p>
       </div>
-      <div className="hero-portrait"><div className="portrait-frame"><Image src="/images/mateo-london.jpg" alt="Professional portrait of Mateo Sonaglia" fill priority sizes="(max-width: 900px) 92vw, 38vw" /></div><div className="portrait-note"><b>Building Across Markets</b><br />Growth Through Connection</div><div className="portrait-shape" /></div>
+      <div className="hero-portrait"><div className="portrait-frame"><Image src="/images/mateo-london.jpg" alt="Mateo Sonaglia in London" fill priority sizes="(max-width: 900px) 92vw, 38vw" /></div><div className="portrait-note"><span>A career in the making</span><b>Curiosity. Ownership. Connection.</b></div><div className="portrait-shape" /></div>
     </section>
 
-    <section className="section origin-story">
-      <div className="shell origin-grid">
-        <div><p className="eyebrow light">My story</p><h2>New environments taught me how to <em>create opportunity.</em></h2></div>
-        <div className="story-copy"><p>Leaving Bolivia at 18 meant building a life in a new country, navigating unfamiliar environments, and finding community from the ground up. Along the way, I learned to listen, adapt across cultures, and take initiative—even when the next step was not obvious.</p><p>Those lessons now shape my work: collaborating across international markets at The Cheesecake Factory Bakery, building GETALIKE with my co-founder, and creating opportunities for students through AMA. Whether I am meeting a local business owner or planning a career trip, I care about understanding people and turning a conversation into action.</p><blockquote>A person&apos;s starting point should not determine how far they can go.</blockquote></div>
+    <section className="career-context" aria-label="Current experience"><div className="shell context-inner"><p>Where I&apos;m building</p><div><span>The Cheesecake Factory Bakery</span><span>Apple</span><span>AMA at Cal Lutheran</span><span>GETALIKE</span></div></div></section>
+
+    <section className="section shell career-story" id="my-story">
+      <div><p className="eyebrow">The story so far</p><h2>I don&apos;t wait for a role to <em>make a contribution.</em></h2></div>
+      <div className="story-copy"><p>I&apos;ve always been drawn to the moment a conversation becomes something real: a business collaboration, an event that opens someone&apos;s eyes, or an idea a team decides to build together.</p><p>At Cal Lutheran, that instinct led me from AMA Vice President to President. I began taking on more responsibility: leading our executive team, bringing industry leaders to campus, and organizing experiences that help students see what comes next.</p><p>That same approach carries into my work. I&apos;m building GETALIKE with my co-founder, continuing at The Cheesecake Factory Bakery after my internship, and developing my customer-facing experience at Apple. Each role is teaching me something different about people, brands, and execution.</p><p className="story-signoff">My international perspective shapes how I connect. My initiative shapes what I do with those connections.</p></div>
+    </section>
+
+    <section className="home-work section"><div className="shell">
+      <div className="section-heading"><div><p className="eyebrow">Initiative in action</p><h2>The work behind<br />the story.</h2></div><Link className="text-link" href="/projects">Explore all projects</Link></div>
+      <article className="leadership-feature">
+        <div className="feature-photo"><Image src="/images/creator-challenge.jpg" alt="AMA students and marketing leaders together at the Cheesecake Factory Creator Challenge" fill sizes="(max-width: 900px) 100vw, 55vw" /></div>
+        <div className="feature-copy"><p className="eyebrow">Leadership · American Marketing Association</p><h3>Opening doors<br />beyond campus.</h3><p>As AMA President, I lead an executive team that turns professional relationships into experiences students can learn from.</p><ul><li>Led a New York career trip with visits to Google, the NFL, Hightouch, Ogilvy, and Chubb.</li><li>Moderated “Lessons from the Marketing C-Suite” with former CMO Alan Cohen.</li><li>Led the AMA × Cheesecake Factory Creator Challenge, connecting student teams with senior marketing leaders.</li></ul><Link className="text-link" href="/projects/leadership">See my leadership work</Link></div>
+      </article>
+      <div className="home-work-pair">
+        <article className="venture-feature"><p className="eyebrow light">Entrepreneurship · Co-Founder &amp; CEO</p><h3>Building GETALIKE.<br />Learning by doing.</h3><p>Helping local businesses and nonprofits connect strategy with storytelling, while learning what it takes to earn trust, develop partnerships, and deliver creative work.</p><div className="venture-result"><strong>1,250+</strong><p>registrations at City Impact&apos;s Beachfront Run, which our team supported through promotional content and marketing strategy.</p></div><Link className="text-link light-link" href="/projects/getalike">Inside the venture</Link></article>
+        <article className="brand-feature"><div className="brand-feature-photo"><Image src="/images/cheesecake-overview.jpg" alt="The Cheesecake Factory Bakery international marketing project" fill sizes="(max-width: 900px) 100vw, 45vw" /></div><div className="brand-feature-copy"><p className="eyebrow">Experience · The Cheesecake Factory Bakery</p><h3>From market insight<br />to business execution.</h3><p>My international sales and marketing internship introduced me to market research, brand strategy, and business development. Today, I&apos;m continuing that experience in sales support.</p><Link className="text-link" href="/projects/international-marketing">Explore the strategy work</Link></div></article>
+      </div>
+    </div></section>
+
+    <section className="section shell career-chapter">
+      <div><p className="eyebrow">Building the next chapter</p><h2>Different roles.<br /><em>A shared direction.</em></h2><p className="chapter-intro">I&apos;m developing a career at the intersection of marketing, partnerships, and business development, with a growing interest in sports and entertainment.</p><Link className="text-link" href="/resume">View my full experience</Link></div>
+      <div className="career-roles">
+        <article><p>Sales &amp; business operations</p><h3>The Cheesecake Factory Bakery</h3><span>Sales Support Technician · September 2026–Present</span><p>Continuing with the company after my international sales, marketing, and business development internship.</p></article>
+        <article><p>Customer experience &amp; sales</p><h3>Apple</h3><span>Sales Specialist · November 2026–Present</span><p>Building customer relationships, understanding individual needs, and helping people find the right solutions.</p></article>
+        <article><p>Leadership &amp; entrepreneurship</p><h3>AMA, GETALIKE &amp; SOM-thing Local</h3><span>President · Co-Founder &amp; CEO · Project Leader</span><p>Leading teams, building community partnerships, and turning ideas into events, content, and opportunities.</p></article>
       </div>
     </section>
 
-    <section className="section shell connection-section">
-      <div className="section-heading"><div><p className="eyebrow">How I create value</p><h2>Growth starts with understanding people, markets, and opportunity.</h2></div></div>
-      <div className="value-grid">
-        <article><span>01</span><h3>Understand the context</h3><p>I bring global curiosity and careful research to understand markets, cultures, people, and the real question behind an opportunity.</p></article>
-        <article><span>02</span><h3>Build genuine trust</h3><p>I listen, communicate clearly, and make people feel valued so ideas can develop into useful relationships and collaboration.</p></article>
-        <article><span>03</span><h3>Create momentum</h3><p>I organize people and ideas into concrete action through strategy, content, events, partnerships, and coordinated execution.</p></article>
-      </div>
-    </section>
-
-    <section className="section purpose-section"><div className="shell purpose-grid"><div><p className="eyebrow light">Purpose</p><h2>Create opportunity, then share it.</h2></div><div><p>My mission is to connect people, ideas, and opportunities and transform those connections into meaningful action. Through marketing, entrepreneurship, innovation, and global business, I want to help people and organizations recognize their potential, communicate their value, and build sustainable growth.</p><p>My long-term vision is to become a global entrepreneur and business leader who creates meaningful value, brings people together, and opens doors for others.</p><Link className="text-link light-link" href="/projects">See the work behind the story →</Link></div></div></section>
-
-    <section className="section shell closing"><p className="eyebrow">The next connection</p><h2>Have an idea, opportunity, or project worth building?</h2><Link className="button button-accent" href="/contact">Connect with Mateo <span>→</span></Link></section>
-  </>;
+    <section className="home-invitation"><div className="shell"><p className="eyebrow light">Let&apos;s connect</p><h2>Good things start<br />with a conversation.</h2><p>A shared idea, a potential collaboration, or a chance to learn from each other. I&apos;d love to hear from you.</p><Link className="button button-secondary" href="/contact">Get in touch</Link></div></section>
+  </div>;
 }

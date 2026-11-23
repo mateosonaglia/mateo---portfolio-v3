@@ -2,47 +2,46 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  return <div className="career-home">
+  return <>
     <section className="hero shell">
       <div className="hero-copy">
-        <p className="eyebrow">Mateo Sonaglia · Marketing, partnerships &amp; leadership</p>
-        <h1>Turning initiative<br />into <em>impact.</em></h1>
-        <p className="hero-kicker">Building a career by building things that matter.</p>
-        <p className="hero-lede">I bring people together and move ideas forward. From leading a marketing association to building a business and gaining experience with global brands, I&apos;m learning by taking ownership, creating opportunities, and following through.</p>
-        <div className="button-row"><Link className="button button-primary" href="/projects">Explore my work</Link><a className="button button-secondary" href="#my-story">Get to know me</a></div>
-        <p className="hero-context">Based in Los Angeles · Cal Lutheran, Class of 2026</p>
+        <h1>Connecting markets, people, and <em>growth.</em></h1>
+        <p className="hero-kicker">Marketing · Partnerships · Business Development</p>
+        <p className="hero-lede">I&apos;m Mateo Sonaglia. I study marketing and global business at Cal Lutheran, lead our American Marketing Association chapter, and co-founded GETALIKE. Alongside that, I&apos;m building experience in sales and marketing at The Cheesecake Factory Bakery and Apple.</p>
+        <div className="button-row">
+          <Link className="button button-primary" href="/projects">View Projects</Link>
+          <Link className="button button-secondary" href="/resume">Resume</Link>
+          <Link className="button button-quiet" href="/contact">Contact</Link>
+        </div>
       </div>
-      <div className="hero-portrait"><div className="portrait-frame"><Image src="/images/mateo-london.jpg" alt="Mateo Sonaglia in London" fill priority sizes="(max-width: 900px) 92vw, 38vw" /></div><div className="portrait-note"><span>A career in the making</span><b>Curiosity. Ownership. Connection.</b></div><div className="portrait-shape" /></div>
+      <div className="hero-portrait"><div className="portrait-frame"><Image src="/images/mateo-london.jpg" alt="Professional portrait of Mateo Sonaglia" fill priority sizes="(max-width: 900px) 92vw, 38vw" /></div><div className="portrait-note"><b>Mateo Sonaglia</b><br />Marketing, leadership &amp; entrepreneurship</div><div className="portrait-shape" /></div>
     </section>
 
-    <section className="career-context" aria-label="Current experience"><div className="shell context-inner"><p>Where I&apos;m building</p><div><span>The Cheesecake Factory Bakery</span><span>Apple</span><span>AMA at Cal Lutheran</span><span>GETALIKE</span></div></div></section>
-
-    <section className="section shell career-story" id="my-story">
-      <div><p className="eyebrow">The story so far</p><h2>I don&apos;t wait for a role to <em>make a contribution.</em></h2></div>
-      <div className="story-copy"><p>I&apos;ve always been drawn to the moment a conversation becomes something real: a business collaboration, an event that opens someone&apos;s eyes, or an idea a team decides to build together.</p><p>At Cal Lutheran, that instinct led me from AMA Vice President to President. I began taking on more responsibility: leading our executive team, bringing industry leaders to campus, and organizing experiences that help students see what comes next.</p><p>That same approach carries into my work. I&apos;m building GETALIKE with my co-founder, continuing at The Cheesecake Factory Bakery after my internship, and developing my customer-facing experience at Apple. Each role is teaching me something different about people, brands, and execution.</p><p className="story-signoff">My international perspective shapes how I connect. My initiative shapes what I do with those connections.</p></div>
-    </section>
-
-    <section className="home-work section"><div className="shell">
-      <div className="section-heading"><div><p className="eyebrow">Initiative in action</p><h2>The work behind<br />the story.</h2></div><Link className="text-link" href="/projects">Explore all projects</Link></div>
-      <article className="leadership-feature">
-        <div className="feature-photo"><Image src="/images/creator-challenge.jpg" alt="AMA students and marketing leaders together at the Cheesecake Factory Creator Challenge" fill sizes="(max-width: 900px) 100vw, 55vw" /></div>
-        <div className="feature-copy"><p className="eyebrow">Leadership · American Marketing Association</p><h3>Opening doors<br />beyond campus.</h3><p>As AMA President, I lead an executive team that turns professional relationships into experiences students can learn from.</p><ul><li>Led a New York career trip with visits to Google, the NFL, Hightouch, Ogilvy, and Chubb.</li><li>Moderated “Lessons from the Marketing C-Suite” with former CMO Alan Cohen.</li><li>Led the AMA × Cheesecake Factory Creator Challenge, connecting student teams with senior marketing leaders.</li></ul><Link className="text-link" href="/projects/leadership">See my leadership work</Link></div>
-      </article>
-      <div className="home-work-pair">
-        <article className="venture-feature"><p className="eyebrow light">Entrepreneurship · Co-Founder &amp; CEO</p><h3>Building GETALIKE.<br />Learning by doing.</h3><p>Helping local businesses and nonprofits connect strategy with storytelling, while learning what it takes to earn trust, develop partnerships, and deliver creative work.</p><div className="venture-result"><strong>1,250+</strong><p>registrations at City Impact&apos;s Beachfront Run, which our team supported through promotional content and marketing strategy.</p></div><Link className="text-link light-link" href="/projects/getalike">Inside the venture</Link></article>
-        <article className="brand-feature"><div className="brand-feature-photo"><Image src="/images/cheesecake-overview.jpg" alt="The Cheesecake Factory Bakery international marketing project" fill sizes="(max-width: 900px) 100vw, 45vw" /></div><div className="brand-feature-copy"><p className="eyebrow">Experience · The Cheesecake Factory Bakery</p><h3>From market insight<br />to business execution.</h3><p>My international sales and marketing internship introduced me to market research, brand strategy, and business development. Today, I&apos;m continuing that experience in sales support.</p><Link className="text-link" href="/projects/international-marketing">Explore the strategy work</Link></div></article>
-      </div>
-    </div></section>
-
-    <section className="section shell career-chapter">
-      <div><p className="eyebrow">Building the next chapter</p><h2>Different roles.<br /><em>A shared direction.</em></h2><p className="chapter-intro">I&apos;m developing a career at the intersection of marketing, partnerships, and business development, with a growing interest in sports and entertainment.</p><Link className="text-link" href="/resume">View my full experience</Link></div>
-      <div className="career-roles">
-        <article><p>Sales &amp; business operations</p><h3>The Cheesecake Factory Bakery</h3><span>Sales Support Technician · September 2026–Present</span><p>Continuing with the company after my international sales, marketing, and business development internship.</p></article>
-        <article><p>Customer experience &amp; sales</p><h3>Apple</h3><span>Sales Specialist · November 2026–Present</span><p>Building customer relationships, understanding individual needs, and helping people find the right solutions.</p></article>
-        <article><p>Leadership &amp; entrepreneurship</p><h3>AMA, GETALIKE &amp; SOM-thing Local</h3><span>President · Co-Founder &amp; CEO · Project Leader</span><p>Leading teams, building community partnerships, and turning ideas into events, content, and opportunities.</p></article>
+    <section className="section shell home-highlights">
+      <div className="section-heading"><div><p className="eyebrow">Recent highlights</p><h2>A closer look at my work.</h2></div><Link className="text-link" href="/projects">All projects</Link></div>
+      <div className="highlight-stories">
+        <Link href="/projects/leadership"><p className="eyebrow">AMA · President</p><h3>Taking the classroom to New York.</h3><p>I led our chapter&apos;s career trip to meet teams at Google, the NFL, Hightouch, Ogilvy, and Chubb. Back on campus, I recently moderated a fireside chat with former CMO Alan Cohen.</p><span className="text-link">Explore my leadership work</span></Link>
+        <Link href="/projects/getalike"><p className="eyebrow">GETALIKE · Co-Founder &amp; CEO</p><h3>Building a business with local organizations.</h3><p>My co-founder and I work with businesses and nonprofits on marketing strategy and video content. Our work includes promoting City Impact&apos;s Beachfront Run, an event that reached more than 1,250 registrations.</p><span className="text-link">Learn about GETALIKE</span></Link>
+        <Link href="/projects/international-marketing"><p className="eyebrow">The Cheesecake Factory Bakery</p><h3>Researching how a brand grows internationally.</h3><p>During my internship, I worked on international market research, sales materials, and a LinkedIn strategy. I&apos;ve since returned to the company as a Sales Support Technician.</p><span className="text-link">View the marketing project</span></Link>
       </div>
     </section>
 
-    <section className="home-invitation"><div className="shell"><p className="eyebrow light">Let&apos;s connect</p><h2>Good things start<br />with a conversation.</h2><p>A shared idea, a potential collaboration, or a chance to learn from each other. I&apos;d love to hear from you.</p><Link className="button button-secondary" href="/contact">Get in touch</Link></div></section>
-  </div>;
+    <section className="section origin-story">
+      <div className="shell origin-grid">
+        <div><p className="eyebrow light">About me</p><h2>What keeps me interested.</h2></div>
+        <div className="story-copy"><p>I like meeting people, asking questions, and understanding how things work behind the scenes. That curiosity has taken me into international marketing, student leadership, and starting a business while finishing my degree.</p><p>As AMA President, I enjoy working with our executive team to bring professionals to campus and give students a closer look at different careers. With GETALIKE, I get to sit down with business owners, understand what they want to achieve, and help shape how they tell their story.</p><p>I&apos;m graduating from Cal Lutheran in December 2026. I&apos;m especially interested in where partnerships, brand marketing, and business development meet, including in sports and entertainment.</p></div>
+      </div>
+    </section>
+
+    <section className="section shell connection-section">
+      <div className="section-heading"><div><p className="eyebrow">Current experience</p><h2>Where I&apos;m spending my time.</h2></div><Link className="text-link" href="/resume">Full experience</Link></div>
+      <div className="value-grid current-work">
+        <article><p className="eyebrow">Sales support</p><h3>The Cheesecake Factory Bakery</h3><p>Sales Support Technician · September 2026–Present</p><p>Continuing with the company after my international sales, marketing, and business development internship.</p></article>
+        <article><p className="eyebrow">Retail sales</p><h3>Apple</h3><p>Sales Specialist · November 2026–Present</p><p>Working directly with customers, understanding their needs, and helping them find the right products.</p></article>
+        <article><p className="eyebrow">Community marketing</p><h3>SOM-thing Local</h3><p>Project Leader · Cal Lutheran</p><p>Coordinating student content teams and local business features through the School of Management Brand Ambassadors.</p></article>
+      </div>
+    </section>
+
+    <section className="section shell closing"><p className="eyebrow">Get in touch</p><h2>Want to talk about a project or collaboration?</h2><Link className="button button-accent" href="/contact">Connect with Mateo</Link></section>
+  </>;
 }

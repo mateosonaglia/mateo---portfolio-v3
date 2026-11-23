@@ -504,91 +504,16 @@ h1 em,h2 em { font-family:Manrope, Inter, sans-serif; font-style:normal; font-we
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior:auto!important; transition:none!important; } }
 
-/* Career narrative: retain the portfolio's navy and terracotta identity. */
-.career-home { overflow:clip; }
-.career-home .hero { gap:54px; min-height:740px; padding-block:72px; }
-.career-home .hero h1 { font-size:clamp(58px,6.4vw,96px); line-height:1.02; max-width:820px; }
-.career-home .eyebrow { font-size:14px; letter-spacing:.09em; }
-.career-home .hero .eyebrow { max-width:460px; color:var(--muted); }
-.career-home .hero-lede { font-size:18px; max-width:590px; }
-.career-home .hero-kicker { font-size:19px; }
-.career-home .hero-context { font-size:14px; color:var(--muted); }
-.career-home .portrait-frame { border-radius:160px 160px 18px 18px; inset:0 2% 0 8%; }
-.career-home .portrait-shape { width:65%; height:55%; right:-5%; top:-20px; border-radius:150px 150px 20px 20px; background:#e8ddcf; }
-.career-home .portrait-note { bottom:26px; padding:19px 24px; border-radius:4px; }
-.career-home .portrait-note span { display:block; margin-bottom:6px; color:#d3dfe9; font-size:14px; }
-.career-home .portrait-note b { display:block; font-size:16px; }
-.career-context { border-block:1px solid var(--rule); }
-.context-inner { display:flex; align-items:center; gap:44px; padding-block:28px; }
-.context-inner>p { margin:0; font-size:14px; color:var(--muted); flex-shrink:0; }
-.context-inner>div { display:flex; flex:1; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px; }
-.context-inner span { font-family:Manrope,sans-serif; font-weight:750; font-size:17px; color:var(--blue); }
-.career-story,.career-chapter { display:grid; grid-template-columns:1fr 1fr; gap:100px; }
-.career-home .career-story h2,.career-home .career-chapter h2 { font-size:clamp(36px,3.8vw,60px); line-height:1.1; max-width:550px; }
-.career-story { scroll-margin-top:32px; }
-.career-story .story-copy { font-size:18px; color:#424d56; }
-.career-story .story-signoff { border-left:3px solid var(--amber); padding-left:24px; margin-top:30px; font-weight:650; color:var(--blue); }
-.home-work { background:#e9edf0; }
-.career-home .home-work h2 { font-size:clamp(40px,4.5vw,68px); line-height:1.07; }
-.leadership-feature { display:grid; grid-template-columns:1.08fr 1fr; background:var(--white); overflow:hidden; border-radius:12px; }
-.feature-photo { position:relative; min-height:610px; }
-.feature-photo img { object-position:50% 50%; }
-.feature-copy { padding:52px; }
-.feature-copy h3,.home-work-pair h3 { font-size:clamp(30px,3vw,44px); letter-spacing:-.04em; line-height:1.12; margin-bottom:24px; }
-.feature-copy>p:not(.eyebrow),.feature-copy li { color:#46525b; font-size:16px; line-height:1.7; }
-.feature-copy ul { padding-left:20px; margin:22px 0 30px; }
-.feature-copy li+li { margin-top:14px; }
-.home-work-pair { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:24px; }
-.venture-feature { padding:52px; background:var(--blue); color:white; border-radius:12px; }
-.venture-feature>p:not(.eyebrow) { color:#e2eaf0; font-size:18px; line-height:1.7; }
-.venture-result { margin-top:42px; padding-top:28px; border-top:1px solid #ffffff4a; }
-.venture-result strong { font-family:Manrope,sans-serif; font-size:72px; line-height:1.2; font-weight:650; letter-spacing:-.05em; color:#eaa387; }
-.venture-result p { font-size:16px; line-height:1.7; max-width:370px; color:#e2eaf0; margin-top:10px; }
-.brand-feature { border-radius:12px; overflow:hidden; background:var(--white); }
-.brand-feature-photo { position:relative; height:260px; }
-.brand-feature-copy { padding:36px 42px 42px; }
-.brand-feature-copy>p:not(.eyebrow) { color:#46525b; line-height:1.7; margin-bottom:26px; }
-.career-chapter .chapter-intro { font-size:18px; line-height:1.7; color:var(--muted); max-width:490px; margin:28px 0; }
-.career-roles article { border-top:1px solid var(--rule); padding:26px 0; }
-.career-roles article:last-child { border-bottom:1px solid var(--rule); }
-.career-roles article>p:first-child { color:var(--amber); font-size:14px; font-weight:700; margin-bottom:10px; }
-.career-roles h3 { font-size:25px; line-height:1.2; letter-spacing:-.03em; margin-bottom:8px; }
-.career-roles span { font-size:14px; color:var(--muted); }
-.career-roles article>p:last-child { margin-top:14px; margin-bottom:0; color:#46525b; }
-.home-invitation { padding:92px 0; background:var(--blue); color:white; }
-.home-invitation h2 { font-size:clamp(38px,5.4vw,80px); line-height:1.04; letter-spacing:-.05em; margin-bottom:24px; }
-.home-invitation .shell>p:not(.eyebrow) { max-width:550px; font-size:18px; color:#e2eaf0; line-height:1.7; margin-bottom:32px; }
-.home-invitation .button { color:var(--ink); }
+/* Homepage highlights use the existing typography and section rhythm. */
+.home-highlights { border-top:1px solid var(--rule); }
+.highlight-stories { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px; }
+.highlight-stories>a { display:flex; flex-direction:column; align-items:flex-start; padding-top:26px; border-top:2px solid var(--blue); }
+.highlight-stories h3 { font-size:28px; line-height:1.18; letter-spacing:-.035em; }
+.highlight-stories>a>p:not(.eyebrow) { color:var(--muted); line-height:1.75; margin-bottom:24px; }
+.highlight-stories .text-link { margin-top:auto; font-size:14px; }
+.home-highlights .eyebrow,.current-work .eyebrow { font-size:14px; letter-spacing:.08em; }
+.current-work h3 { margin-top:26px; }
 .skip-link { position:absolute; top:8px; left:8px; z-index:100; padding:12px 18px; background:var(--blue); color:white; transform:translateY(-160%); }
 .skip-link:focus { transform:translateY(0); }
 a:focus-visible { outline:3px solid var(--amber); outline-offset:5px; }
-@media(max-width:1100px) {
-  .career-home .hero { gap:24px; }
-  .career-story,.career-chapter { gap:50px; }
-  .context-inner { align-items:flex-start; flex-direction:column; gap:16px; }
-  .context-inner>div { width:100%; }
-  .feature-copy,.venture-feature { padding:36px; }
-}
-@media(max-width:900px) {
-  .career-home .hero { grid-template-columns:1fr; gap:42px; min-height:0; }
-  .career-home .hero-portrait { width:min(100%,540px); min-height:560px; margin-inline:auto; }
-  .career-story,.career-chapter,.leadership-feature { grid-template-columns:1fr; gap:36px; }
-  .leadership-feature { gap:0; }
-  .feature-photo { min-height:0; aspect-ratio:4/3; }
-  .home-work-pair { grid-template-columns:1fr; }
-  .career-home .career-story h2,.career-home .career-chapter h2 { max-width:650px; }
-}
-@media(max-width:600px) {
-  .career-home .hero { padding-block:48px; }
-  .career-home .hero h1 { font-size:clamp(44px,11vw,60px); }
-  .career-home .hero-portrait { min-height:440px; }
-  .career-home .hero .eyebrow { font-size:14px; }
-  .context-inner>div { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
-  .context-inner span { font-size:16px; }
-  .feature-copy,.venture-feature,.brand-feature-copy { padding:30px 24px; }
-  .feature-copy .eyebrow { max-width:250px; }
-  .feature-photo { aspect-ratio:4/3; }
-  .career-home .section { padding-block:72px; }
-  .career-home .text-link { display:inline-block; }
-  .home-invitation { padding:72px 0; }
-}
+@media(max-width:900px) { .highlight-stories { grid-template-columns:1fr; gap:36px; } .highlight-stories h3 { max-width:600px; } }

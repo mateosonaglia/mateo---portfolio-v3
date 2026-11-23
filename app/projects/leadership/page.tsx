@@ -21,7 +21,7 @@ export default function LeadershipPage() {
         <p className="eyebrow">The mission</p>
         <h2>Creating access to real-world professional experiences.</h2>
         <p>As President of the American Marketing Association at Cal Lutheran, I lead a student executive team focused on creating professional development experiences, strengthening campus engagement, and connecting students with brands, alumni, and industry professionals.</p>
-        <p>After transitioning from Vice President to President, I have helped guide AMA’s programming, partnerships, and event execution with a focus on real-world marketing, career readiness, and community building.</p>
+        <p>The transition from Vice President to President brought responsibility for chapter programming, partnerships, and event execution, working closely with the executive team and university partners.</p>
       </div>
       <div className="mission-visual">
         <Image src="/images/ama-logo.png" alt="American Marketing Association logo" width={1024} height={1024}/>
@@ -69,7 +69,7 @@ export default function LeadershipPage() {
 
       <article className="featured-event shell">
         <div className="featured-event-heading"><p className="eyebrow">Career exploration · October 2026</p><h2>New York City Career Trip</h2><p>President · Trip Lead · Relationship Building</p></div>
-        <div className="story-copy"><h3>Opening doors beyond campus</h3><p>I initiated and led a career trip connecting AMA members with professionals at five organizations: Hightouch, Ogilvy, Google, the NFL, and Chubb. I coordinated outreach, logistics, member preparation, and on-site execution with university and industry partners.</p><p>The trip brought students into conversations about marketing, business, and career paths—and put relationship building at the center of the experience.</p></div>
+        <div className="story-copy"><h3>Opening doors beyond campus</h3><p>I initiated and led a career trip connecting AMA members with professionals at five organizations: Hightouch, Ogilvy, Google, the NFL, and Chubb. The role covered outreach, logistics, member preparation, and on-site execution with university and industry partners.</p><p>The trip brought students into conversations about marketing, business, and career paths—and put relationship building at the center of the experience.</p></div>
       </article>
       <article className="featured-event shell">
         <div className="featured-event-heading"><p className="eyebrow">Fireside chat · November 2026</p><h2>Lessons from the Marketing C-Suite</h2><p>President · Event Host · Moderator</p></div>
@@ -92,7 +92,7 @@ export default function LeadershipPage() {
             <div className="story-copy">
               <h3>A professional brief became a shared learning experience</h3>
               <p>This flagship event marked the most ambitious initiative hosted by AMA since its relaunch. In partnership with The Cheesecake Factory&apos;s marketing team, students developed and pitched campaign concepts for the Bowls &amp; Bites Menu to Gen Z audiences.</p>
-              <p>I led more than one month of event strategy and planning, coordinating the executive team, university stakeholders, and brand partners. As host and facilitator, I framed the challenge for students and brand leaders before five teams presented directly to the company&apos;s CMO and senior marketing leaders.</p>
+              <p>I led more than one month of event strategy and planning, coordinating the executive team, university stakeholders, and brand partners. The event brought five teams together to present directly to the company&apos;s CMO and senior marketing leaders.</p>
             </div>
             <div className="impact-card">
               <h3>Event impact</h3>
@@ -160,7 +160,7 @@ export default function LeadershipPage() {
     <section className="leadership-closing shell">
       <p className="eyebrow">The takeaway</p>
       <h2>Leadership is strongest when it creates access for others.</h2>
-      <p>Through AMA, I have focused on leading with and through a team, turning relationships, partnerships, and ideas into real experiences that help students grow professionally, connect with others, and see new possibilities for their future.</p>
+      <p>The chapter’s work depends on a committed executive team and strong relationships with university and industry partners. Together, those efforts give students direct access to professionals, practical marketing experience, and a clearer view of possible career paths.</p>
       <div className="button-row">
         <Link className="button button-dark" href="/projects">View More Projects →</Link>
         <Link className="text-link" href="/contact">Connect with Mateo →</Link>

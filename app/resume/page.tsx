@@ -1,41 +1,34 @@
 const experience = [
   {
-    dates: "September 2026–Present",
+    dates: "January 2026–Present",
+    org: "American Marketing Association, California Lutheran University",
+    role: "President",
+    summary: "Lead a student executive team, direct chapter programming, and build relationships with brands, alumni, and university partners to expand students’ access to industry experience.",
+    points: ["Initiated and led a New York career trip with visits to Google, the NFL, Hightouch, Ogilvy, and Chubb, coordinating outreach, logistics, and student preparation", "Led the AMA × Cheesecake Factory Creator Challenge, bringing student teams together to present campaign concepts to the company’s CMO and senior marketing leaders", "Organized and moderated Lessons from the Marketing C-Suite with former CMO Alan Cohen", "Oversee executive team coordination, event strategy, promotion, and professional partnerships"],
+  },
+  {
+    dates: "Summer 2026–November 2026",
     org: "The Cheesecake Factory Bakery",
-    role: "Sales Support Technician",
-    summary: "Continuing with the company after my international sales and marketing internship, supporting the day-to-day work behind customer relationships and sales execution.",
-    points: ["Support sales operations using Creatio CRM and Ross", "Assist with sales order entry and customer documentation", "Coordinate sales support tasks and internal follow-through"],
+    role: "International Sales, Marketing & Business Development",
+    summary: "Worked with the international team on order processes, marketing strategy, market research, and sales materials.",
+    points: ["Created an order-processing workflow and presented it to the team manager", "Developed an international marketing and LinkedIn strategy, presenting recommendations to marketing leadership", "Researched international markets, competitors, and product positioning to support business development", "Prepared customer-facing materials and coordinated work across teams"],
+  },
+  {
+    dates: "March 2026–Present",
+    org: "GETALIKE",
+    role: "Co-Founder & CEO",
+    summary: "Co-founded a marketing business serving local organizations through strategy, video content, and community partnerships.",
+    points: ["Developed the marketing strategy and content plan for City Impact’s Beachfront Run, an event that reached more than 1,250 registrations", "Build client relationships, develop proposals, and coordinate creative production and project delivery"],
   },
   {
     dates: "November 2026–Present",
     org: "Apple",
     role: "Sales Specialist",
-    summary: "Developing customer-facing sales experience through personalized conversations and product guidance in Apple Retail.",
+    summary: "Develop customer relationships through personalized conversations and product guidance in Apple Retail.",
     points: ["Engage customers to understand their needs and help them explore relevant solutions", "Collaborate with store colleagues to deliver a welcoming customer experience"],
   },
   {
-    dates: "Summer 2025",
-    org: "The Cheesecake Factory Bakery",
-    role: "International Sales, Marketing & Business Development Intern",
-    summary: "Supported international sales and marketing initiatives through market research, customer materials, and collaboration across teams.",
-    points: ["Researched international markets and supported sales and business development projects", "Developed an international LinkedIn strategy and presented recommendations to senior marketing leadership", "Coordinated customer-facing materials and supported cross-functional projects"],
-  },
-  {
-    dates: "March 2026 to Present",
-    org: "GETALIKE",
-    role: "Co-Founder & CEO",
-    summary: "Building a marketing venture that helps organizations connect strategy, storytelling, and execution.",
-    points: ["Developed the marketing strategy and content plan for City Impact’s Beachfront Run, an event that reached more than 1,250 registrations", "Build relationships with community partners and coordinate content and project delivery"],
-  },
-  {
-    dates: "January 2026–Present",
-    org: "American Marketing Association, California Lutheran University",
-    role: "President",
-    summary: "Lead an executive team and build experiences that connect students with industry professionals and new career possibilities.",
-    points: ["Initiated and led a New York career trip with visits to Google, the NFL, Hightouch, Ogilvy, and Chubb", "Coordinate professional outreach, events, communications, and partnerships"],
-  },
-  {
-    dates: "September 2025 to Present",
+    dates: "September 2025–Present",
     org: "SOM-thing Local, School of Management Brand Ambassadors",
     role: "Project Leader",
     summary: "Connect local businesses with the university community through student-led storytelling and digital campaigns.",
@@ -75,14 +68,14 @@ export default function ResumePage() {
     <section className="resume-section resume-experience-section shell">
       <div className="resume-section-heading">
         <p className="eyebrow">Selected experience</p>
-        <h2>Work Experience</h2>
-        <p>My progression across sales, marketing, entrepreneurship, and team leadership.</p>
+        <h2>Leadership &amp; Work Experience</h2>
+        <p>Experience across team leadership, marketing, sales, and entrepreneurship.</p>
       </div>
       <div className="experience-cards">
         {experience.map((item, index) => <article className={index === 0 ? "experience-card experience-current" : "experience-card"} key={`${item.org}-${item.dates}`}>
           <div className="experience-card-top">
             <time>{item.dates}</time>
-            {index === 0 && <span>Current focus</span>}
+            {index === 0 && <span>Chapter leadership</span>}
           </div>
           <p className="experience-org">{item.org}</p>
           <h3>{item.role}</h3>

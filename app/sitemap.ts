@@ -1,0 +1,2 @@
+import type { MetadataRoute } from "next";
+export default function sitemap(): MetadataRoute.Sitemap { const base="https://mateosonaglia.com"; return ["","/projects","/projects/international-marketing","/projects/leadership","/projects/local-brand-growth","/resume","/contact"].map(path=>({url:`${base}${path}`,lastModified:new Date(),changeFrequency:path===""?"monthly":"yearly",priority:path===""?1:.7})); }
